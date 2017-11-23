@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category   Mage
+ * @package    Liftmode_NetworkMerchants
+ * @copyright  Copyright (c)  Dmitry Bashlov, contributors.
+ */
+ -->
+ <config>
+    <modules>
+        <Liftmode_NetworkMerchants>
+            <version>0.0.1</version>
+        </Liftmode_NetworkMerchants>
+    </modules>
+    <global>
+        <models>
+            <networkmerchants>
+                <class>Liftmode_NetworkMerchants_Model</class>
+            </networkmerchants>
+        </models>
+        <helpers>
+            <networkmerchants>
+                <class>Liftmode_NetworkMerchants_Helper</class>
+            </networkmerchants>
+        </helpers>
+    </global>
+    <default>
+        <payment>
+            <networkmerchants>
+                <active>0</active>
+                <model>networkmerchants/method_NetworkMerchants</model>
+                <order_status>processing</order_status>
+                <title>Credit Card(NMI)</title>
+                <cctypes>VI,MC</cctypes>
+                <payment_action>authorize</payment_action>
+                <currency>USD</currency>
+                <allowspecific>0</allowspecific>
+                <useccv>0</useccv>
+            </networkmerchants>
+        </payment>
+    </default>
+</config>

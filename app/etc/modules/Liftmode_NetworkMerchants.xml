@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category   Mage
+ * @package    Liftmode_NetworkMerchants
+ * @copyright  Copyright (c)  Dmitry Bashlov, contributors.
+ */
+ -->
+<config>
+    <modules>
+        <Liftmode_NetworkMerchants>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Payment />
+                <!-- <Liftmode_SimpleFraudProtection /> -->
+            </depends>
+        </Liftmode_NetworkMerchants>
+    </modules>
+</config>
